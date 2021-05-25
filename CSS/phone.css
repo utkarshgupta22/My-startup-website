@@ -1,7 +1,7 @@
 /* navigation  section*/
 #navbar{
     flex-direction: column;
-    width: 105%;
+    width: 103%;
 } 
 
 #navbar ul li {
@@ -17,7 +17,7 @@
 }
 #home::before{
     height: 464px;
-    width: 108%;
+    width: 103%;
     
 }
 #home p{
