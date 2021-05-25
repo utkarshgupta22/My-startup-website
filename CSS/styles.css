@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(31, 129, 194); */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ /* Now Navigation Bar */
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* poore ko agar center krna hota to hum justify-content: center; use krte */
+}
+
+ /* Navigation Bar: Logo and Image  */
+#logo{
+    height: 59px;
+    margin: 1px 26px
+}
+
+#logo img{
+    height: 52px;
+    margin: 2px 6px
+}
+ /* Navigation Bar: List Styling */
+
+#navbar ul{
+     display: flex;
+ }
+
+ /* this for colouring the navbar using pseudo selectors */
+#navbar::before{
+    content: "";
+    background-color: rgb(35, 38, 41);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+} 
+
+#navbar ul li{
+     list-style: none;
+     font-size: 1.2rem;
+ }
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 3px 15px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 587px;
+    justify-content: center;
+    align-items: center;
+}
+      /* befre pseudo selectors are used here for setting background */
+#home::before{
+    content: "";
+    background: url('../images/background1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 625px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index:-1;
+    opacity: 0.85;        
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* this part is for animation in the heading  */
+#glow {
+    /* font-size: 80px; */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+          }
+          to {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+          }
+        }
+
+#home p{
+    color: rgb(19, 1, 1);
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+/* Services Section  */
+#services{
+    background-color: rgb(228, 226, 222);
+    margin: 15px 34px;
+    margin-bottom: 35px;
+    display: flex;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#services .box{
+    padding: 25px;
+    margin: 3px 30px;
+    border-radius: 20px;
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+} 
+
+#services .box p{
+    font-family: 'Noto Serif', serif;
+}
+/* Team Section  */
+#team-section{
+    position: relative;
+    /* height: 551px; */
+}
+
+#team-section::before{
+   content: "";
+   position: absolute;
+   background-color: rgb(76, 81, 85);
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+
+#team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-item{
+    padding: 40px;
+}
+
+#team img{
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
+#team .team-item a{
+    text-decoration: none;
+    color: black;
+}
+
+#team .team-item a:hover{
+    color: white;
+    text-shadow: 10px 10px #252424;
+}
+#team .team-item p{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Amiri', serif;
+    border-radius: 10px;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+
+/* glow in other heading  */
+#glow1{
+    font-size: 3rem;
+    padding: 15px;
+    animation: glow1 0.6s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow1 {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+  }
+
+/* Contact section  */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(228, 226, 222);
+    /* background: url(https://images.wallpaperscraft.com/image/material_ornament_pattern_background_texture_55237_1920x1080.jpg)no-repeat center center/cover; */
+    opacity: 0.9;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    /* background-color: rgb(207, 203, 203); */
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box form label{
+    /* color: white; */
+    font-size: 1.3rem ;
+    font-family: 'Noto Serif', serif;
+}
+footer{
+    background: rgb(76, 81, 85);
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility Clases */
+.h-primary {
+    font-size: 3rem;
+    padding: 15px;
+    /* font-family: 'Noto Serif', serif; */
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 15px;
+    font-family: 'Noto Serif', serif;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1.5px solid black;
+    font-weight: bold;
+    color: black;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    margin: 15px;
+    box-shadow: 3px 3px 5px 5px black;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.center{
+    text-align: center;
+}
+  
