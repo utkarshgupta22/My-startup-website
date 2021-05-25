@@ -9,6 +9,14 @@
     padding: 0px 0px;
     padding-bottom: 8px;
 }
+#navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 3px 15px;
+    font-weight: bold;
+    margin-left: -6px;
+}
 /* home section  */
 #home{
     height: 360px;
