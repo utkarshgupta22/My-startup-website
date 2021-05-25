@@ -1,7 +1,7 @@
 /* navigation  section*/
 #navbar{
     flex-direction: column;
-    width: 103%;
+    width: 105%;
 } 
 
 #navbar ul li {
